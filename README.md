@@ -15,6 +15,7 @@ Younas, Osman
 
 
                                                   ICA06 - Gruppe 11
+                                                      Oppgave 1:
                                                   
   
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpErlend.png "Hjelp Erlend")
@@ -22,6 +23,7 @@ Erlend: Hjelp
 
 
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpOsman.png "Hjelp Osman")
+
 Osman: Hjelp
 
 
@@ -30,6 +32,7 @@ Magnus: Hjelp
 
 
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpPhillip.png "Hjelp Phillip")
+
 Phillip: Hjelp
 
 
