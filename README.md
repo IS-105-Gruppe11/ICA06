@@ -15,15 +15,9 @@ Younas, Osman
 
 
                                                   ICA06 - Gruppe 11
+                                                      Oppgave 1:
                                                   
-                                                      Ekseperiment 1
-                                                  
-Sammenligne frekvensspektrum (finn formanter) når flere personer sier et ord (for
-eksempel, “hjelp”). Forsøk å forklare eventuelle forskjeller i frekvensanalyse.
-Hvordan hadde dere gått frem for å impelementere et system for gjenkjennelse av
-språk? For eksempel, hva skulle man klassifisere på, - enkelte lyd, hele ord eller
-hele setninger?
-
+  
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpErlend.png "Hjelp Erlend")
 Erlend: Hjelp
 
@@ -47,27 +41,39 @@ Richard: Hjelp
 
 
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpEva.png "Hjelp Eva")
-Eva: Hjelp                                                
+Eva: Hjelp  
 
+I den første oppgaven skulle vi sammenligne frekvensspektrummet til medlemmene av gruppen. 
+De røde linjene danner det som kalles formantlinjer og defineres som "det frekvens områdetet hvor vokal lyder er på sitt 
+mest karakteristiske". Utifra bildene kan man se at formantlinje 1 og 2, som vil si de lave frekvensene, er relativt like,
+men forskjellen blir større på de høye frekvensene. Vi tror dette kan ha med vokalen "e" som blir brukt i ordet "hjelp" ligger
+i de lavere frekvensene, derfor er det ikke store forandringer mellom oss på hvordan vi utaller fonemen "e". Bildet nummer 6 
+er en jente stemme og vi la merke til at det var mer prikker på de høyere frekvensene. 
 
-Vi skulle også tenke på hvordan vi ville gått fram for å implementere et system for gjennkjennelse av språk.
+Hvordan hadde dere gått frem for å implementere et system for å gjennskjennelse av språk? 
+Vi tenker at den beste måten hadde vært å gå for enkelte lydsegmenter, istedenfor hele ord eller setninger. 
+Dette gjør at mest mulig data kan bli lagret for et enkelt lydutslag. Dette vil gjøre databasen mer rik på detaljer
+og gjengjenningen av ord og setninger kan enklere bli tolket med større variasjon I uttalelsen.
 
-- Vi tenker at den  beste måten hadde vært å gå for enkelte lydsegmenter, istedenfor hele ord eller setninger. Dette gjør at mest mulig data kan bli  lagret for et enkelt lydutslag.Dette vil gjøre databasen mer rik på detaljer og gjengjenningen av ord og setninger kan enklere bli tolket med større variasjon I uttalelsen. 
+Vi tenker at en algoritme må utvikles for å innhente mest mulig informasjon fra mange brukere, som kan lære av brukerne 
+gjenkjenne mønsteret i hver uttalelse av bestemte ord. Dette kan da settes sammen til en rik database som må bli analysert,
+bearbeidet og testet grundig.
 
-- Vi tenker at en algoritme må utvikles for å innhente mest mulig informasjon fra mange brukere, som kan lære av brukerne gjenkjenne mønsteret i hver uttalelse av bestemte ord. Dette kan da settes sammen til en rik database som må bli analysert, bearbeidet og testet grundig.
+Vi søkte rundt på nettet og fant ut at programmer bruker såkalte fonemer til å forstå hva du sier. 
+Fonemer er kort fortalt det minste lydsegmentet som kan forandre meningen til et ord. Forkjelige språk har ulike fonemer,
+for eksempel norsk har rulle -r og skarre –r.  Så en annen måte kunne vært å lage en database med fonemer og sammenlignet 
+dette med input og gitt hvilket språk det mest sannsynlig er, basert på hvilke fonemer som blir brukt. 
 
-- Vi søkte rundt på nettet og fant ut at programmer bruker såkalte fonemer til å forstå hva du sier. Fonemer er kort fortalt det minste lydsegmentet som kan forandre meningen til et ord. Forkjelige språk har ulike fonemer, for eksempel norsk har rulle -r og skarre –r.  Så en annen måte kunne vært å lage en database med fonemer og sammenlignet dette med input og gitt hvilket språk det mest sannsynlig er, basert på hvilke fonemer som blir brukt. 
+                                                    Oppgave 2:
+                                                    
+Phillip you fix?
 
-
-                                                          Ekseperiment 2
-
-Lag din egen skytjeneste som generer lyd basert på tekst.
-
-- Koden ligger i "server.go"
-
-- For å kjøre tjenesten startes server.go i terminalen (go run server.go). I en nettleser skrives "localhost:8001/speech/hva du ønsker at tjenesten skal si" (eventuelt ip adressen istedenfor localhost om tjenesten blir kjørt på en annen maskin). 
-
-
-                                                           Ekseperiment 3
-                                                           
-                                                           
+                                                    Oppgave 3:
+            
+Forsøkte å bruke eksempel 1 som var gspeech, men fikk det ikke til å fungere. Fulgte instruksene fra denne repositoryen
+https://github.com/amsehili/gspeech-rec og videre informasjon fra blogg av samme person
+https://aminesehili.wordpress.com/2015/02/08/on-the-use-of-googles-speech-recognition-api-version-2/ men greide ikke finne ut hva
+problemet var. Jeg bytta api key med en jeg skaffet fra Google Cloud speech api uten lykke. Virker som jeg fikk sendt flac filen til
+google, men fikk tilbake "Google was unable to recognize any speech in the audio data". Er veldig sikker på at jeg har riktig format på
+flac filen som er mono, 16000 hertz og ikke lengre en 15 sekunder. Tror problemet kan være at jeg ikke lastet ned SOX på riktig sted,
+men fant ingen instrukser på hvor det skulle være så la den i git/Ming64/bin hvor jeg la wget som fungerte. 
