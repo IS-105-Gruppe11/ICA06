@@ -15,7 +15,7 @@ Younas, Osman
 
 
                                                   ICA06 - Gruppe 11
-                                                      Oppgave 1:
+                                                      Eksperiment 1:
                                                   
   
 ![](https://raw.github.com/IS-105-Gruppe11/ICA06/master/bilder/hjelpErlend.png "Hjelp Erlend")
@@ -64,11 +64,15 @@ Fonemer er kort fortalt det minste lydsegmentet som kan forandre meningen til et
 for eksempel norsk har rulle -r og skarre –r.  Så en annen måte kunne vært å lage en database med fonemer og sammenlignet 
 dette med input og gitt hvilket språk det mest sannsynlig er, basert på hvilke fonemer som blir brukt. 
 
-                                                    Oppgave 2:
+                                                    Eksperiment 2:
                                                     
-Phillip you fix?
+I eksperiment 2 skulle vi lage en egen skytjeneste som genererer lyd basert på tekst.
 
-                                                    Oppgave 3:
+- Koden ligger i "server.go"
+
+- For å sette i gang tjenesten kjøres server.go i en terminal (go run server.go). I en nettleser skriver man "localhost:8001/speech/Hva du vil at tjenesten skal si". Man kan eventuelt bytte ut localhost med ip adressen til maskinen om tjenesten blir kjørt på en annen maskin. 
+
+                                                    Eksperiment 3:
             
 Forsøkte å bruke eksempel 1 som var gspeech, men fikk det ikke til å fungere. Fulgte instruksene fra denne repositoryen
 https://github.com/amsehili/gspeech-rec og videre informasjon fra blogg av samme person
